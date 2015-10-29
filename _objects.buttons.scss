@@ -7,8 +7,6 @@
  */
 
 // Predefine the variables below in order to alter and enable specific features.
-$inuit-btn-namespace:       $inuit-namespace !default;
-
 $inuit-btn-padding:         halve($inuit-base-spacing-unit) !default;
 $inuit-btn-padding--small:  halve($inuit-btn-padding) !default;
 $inuit-btn-padding--large:  double($inuit-btn-padding) !default;
@@ -48,8 +46,7 @@ $inuit-global-border-box: false !default;
  * 7. Subtract the border size from the padding value so that buttons do not
  *    grow larger as we add borders.
  */
-.#{$inuit-btn-namespace}o-btn,
-%#{$inuit-btn-namespace}o-btn {
+.o-btn {
     display: inline-block; /* [1] */
     vertical-align: middle; /* [2] */
     font: inherit; /* [3] */
@@ -83,8 +80,8 @@ $inuit-global-border-box: false !default;
 /**
  * Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
  */
-.#{$inuit-btn-namespace}o-btn::-moz-focus-inner,
-%#{$inuit-btn-namespace}o-btn::-moz-focus-inner {
+.o-btn::-moz-focus-inner,
+%o-btn::-moz-focus-inner {
     border:  0;
     padding: 0;
 }
@@ -99,8 +96,7 @@ $inuit-global-border-box: false !default;
      * Small buttons.
      */
 
-    .#{$inuit-btn-namespace}o-btn--small,
-    %#{$inuit-btn-namespace}o-btn--small {
+    .o-btn--small {
         padding: $inuit-btn-padding--small - $inuit-btn-border-width  double($inuit-btn-padding--small) - $inuit-btn-border-width; /* [7] */
     }
 
@@ -112,8 +108,7 @@ $inuit-global-border-box: false !default;
      * Large buttons.
      */
 
-    .#{$inuit-btn-namespace}o-btn--large,
-    %#{$inuit-btn-namespace}o-btn--large {
+    .o-btn--large {
         padding: $inuit-btn-padding--large - $inuit-btn-border-width  double($inuit-btn-padding--large) - $inuit-btn-border-width; /* [7] */
     }
 
@@ -129,8 +124,7 @@ $inuit-global-border-box: false !default;
      * Full-width buttons.
      */
 
-    .#{$inuit-btn-namespace}o-btn--full,
-    %#{$inuit-btn-namespace}o-btn--full {
+    .o-btn--full {
         width: 100%;
 
         @if $inuit-global-border-box == false {
@@ -158,8 +152,7 @@ $inuit-global-border-box: false !default;
      *    button.
      */
 
-    .#{$inuit-btn-namespace}o-btn--pill,
-    %#{$inuit-btn-namespace}o-btn--pill {
+    .o-btn--pill {
         border-radius: 100px; /* [1] */
     }
 
