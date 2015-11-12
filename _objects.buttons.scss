@@ -7,20 +7,20 @@
  */
 
 // Predefine the variables below in order to alter and enable specific features.
-$inuit-btn-padding:         halve($inuit-base-spacing-unit) !default;
-$inuit-btn-padding--small:  halve($inuit-btn-padding) !default;
-$inuit-btn-padding--large:  double($inuit-btn-padding) !default;
-$inuit-btn-background:      transparent !default;
-$inuit-btn-color:           #4a8ec2 !default;
-$inuit-btn-border-width:    1px !default;
-$inuit-btn-border-style:    solid !default;
-$inuit-btn-border-color:    $inuit-btn-background !default;
-$inuit-btn-radius:          0 !default;
+$o-btn-padding:         halve($inuit-base-spacing-unit) !default;
+$o-btn-padding--small:  halve($o-btn-padding) !default;
+$o-btn-padding--large:  double($o-btn-padding) !default;
+$o-btn-background:      transparent !default;
+$o-btn-color:           #4a8ec2 !default;
+$o-btn-border-width:    1px !default;
+$o-btn-border-style:    solid !default;
+$o-btn-border-color:    $o-btn-background !default;
+$o-btn-radius:          0 !default;
 
-$inuit-enable-btn--small:   false !default;
-$inuit-enable-btn--large:   false !default;
-$inuit-enable-btn--full:    false !default;
-$inuit-enable-btn--pill:    false !default;
+$o-btn--small:   false !default;
+$o-btn--large:   false !default;
+$o-btn--full:    false !default;
+$o-btn--pill:    false !default;
 
 
 
@@ -54,17 +54,17 @@ $inuit-global-border-box: false !default;
     margin:  0; /* [4] */
     cursor: pointer; /* [5] */
     overflow: visible; /* [6] */
-    padding: $inuit-btn-padding - $inuit-btn-border-width  double($inuit-btn-padding) - $inuit-btn-border-width; /* [7] */
-    background-color: $inuit-btn-background;
+    padding: $o-btn-padding - $o-btn-border-width  double($o-btn-padding) - $o-btn-border-width; /* [7] */
+    background-color: $o-btn-background;
 
-    @if($inuit-btn-border-width != 0) {
-        border: $inuit-btn-border-width $inuit-btn-border-style $inuit-btn-border-color;
+    @if($o-btn-border-width != 0) {
+        border: $o-btn-border-width $o-btn-border-style $o-btn-border-color;
     } @else {
         border: none; /* [4] */
     }
 
-    @if($inuit-btn-radius != 0) {
-        border-radius: $inuit-btn-radius;
+    @if($o-btn-radius != 0) {
+        border-radius: $o-btn-radius;
     }
 
     &,
@@ -72,7 +72,7 @@ $inuit-global-border-box: false !default;
     &:active,
     &:focus {
         text-decoration: none; /* [4] */
-        color: $inuit-btn-color;
+        color: $o-btn-color;
     }
 
 }
@@ -80,8 +80,7 @@ $inuit-global-border-box: false !default;
 /**
  * Fix a Firefox bug whereby `input type="submit"` gains 2px extra padding.
  */
-.o-btn::-moz-focus-inner,
-%o-btn::-moz-focus-inner {
+.o-btn::-moz-focus-inner {
     border:  0;
     padding: 0;
 }
@@ -90,26 +89,26 @@ $inuit-global-border-box: false !default;
 
 
 
-@if ($inuit-enable-btn--small == true) {
+@if ($o-btn--small == true) {
 
     /**
      * Small buttons.
      */
 
     .o-btn--small {
-        padding: $inuit-btn-padding--small - $inuit-btn-border-width  double($inuit-btn-padding--small) - $inuit-btn-border-width; /* [7] */
+        padding: $o-btn-padding--small - $o-btn-border-width  double($o-btn-padding--small) - $o-btn-border-width; /* [7] */
     }
 
 }
 
-@if ($inuit-enable-btn--large == true) {
+@if ($o-btn--large == true) {
 
     /**
      * Large buttons.
      */
 
     .o-btn--large {
-        padding: $inuit-btn-padding--large - $inuit-btn-border-width  double($inuit-btn-padding--large) - $inuit-btn-border-width; /* [7] */
+        padding: $o-btn-padding--large - $o-btn-border-width  double($o-btn-padding--large) - $o-btn-border-width; /* [7] */
     }
 
 }
@@ -118,7 +117,7 @@ $inuit-global-border-box: false !default;
 
 
 
-@if ($inuit-enable-btn--full == true) {
+@if ($o-btn--full == true) {
 
     /**
      * Full-width buttons.
@@ -143,7 +142,7 @@ $inuit-global-border-box: false !default;
 
 
 
-@if ($inuit-enable-btn--pill == true) {
+@if ($o-btn--pill == true) {
 
     /**
      * Round-ended buttons.
