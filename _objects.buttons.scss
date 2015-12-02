@@ -126,7 +126,7 @@ $global-border-box: false !default;
     .o-btn--full {
         width: 100%;
 
-        @if $inuit-global-border-box == false {
+        @if $aleut-global-border-box == false {
             /**
              * Remove paddings so that widths and paddings don’t conflict.
              */
