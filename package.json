@@ -1,5 +1,5 @@
 {
-  "name": "aleut-buttons",
+  "name": "@aleut/aleut-buttons",
   "version": "0.4.2",
   "description": "A simple, extensible button object for the aleutcss framework (based on Harry Roberts inuitcss framework)",
   "main": "_objects.buttons.scss",
