@@ -7,7 +7,7 @@
  */
 
 // Predefine the variables below in order to alter and enable specific features.
-$inuit-btn-padding:         halve($inuit-base-spacing-unit) !default;
+$inuit-btn-padding:         halve($spacing) !default;
 $inuit-btn-padding--small:  halve($inuit-btn-padding) !default;
 $inuit-btn-padding--large:  double($inuit-btn-padding) !default;
 $inuit-btn-background:      transparent !default;
