@@ -6,7 +6,8 @@ entire suites of buttons onto.
 ## Install using npm:
 
 ```ssh
-    $ npm install --save-dev @aleut/objects.buttons
+    $ npm install --save-dev aleut.objects.buttons
+
 ```
 
 ## Usage
